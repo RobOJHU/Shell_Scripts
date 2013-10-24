@@ -1,0 +1,15 @@
+#!/bin/ksh
+echo "Type login name"
+read loginname
+echo "Enter uid"
+read uid
+#echo "Enter gid"
+#read gid
+echo "Enter Comments"
+read comments
+#service winbind stop
+groupadd -g $uid $loginname
+useradd -u $uid -g $uid -G 48 -c "$comments" -d /home/$loginname -m -s /bin/bash $loginname
+passwd $loginname
+chage -d 0 $loginname
+#service winbind start
