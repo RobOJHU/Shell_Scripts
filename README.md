@@ -1,4 +1,4 @@
 Shell_Scripts
 =============
 
-*AIX scripts to help at work
+Shellscripts to help at work
