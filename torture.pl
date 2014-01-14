@@ -229,3 +229,27 @@ EOF
 
     
     
+# Tally
+
+
+# This subroutine is called to tally up the
+# test results  from all the children.
+sub tally_results {
+    my $pipe = shift;
+    my (%STATUS,$TIME,$BYTES,$COUNT);
+    while (<$pipe>) {
+        chomp;
+        my ($child,$time,$bytes,$code) = split("\t");
+        $COUNT++;
+        $STATUS{$code}++;
+        $TIME  += $time;
+        $BYTES += $bytes;
+    }
+    return { 
+        count      => $COUNT,
+        trans_time => $TIME,
+        bytes      => $BYTES,
+        status     => \%STATUS
+    };
+} 
+
