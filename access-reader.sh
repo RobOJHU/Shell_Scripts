@@ -14,7 +14,7 @@ do
 echo "       As of $a the system has been up for $c days and $e hours"
 echo ""
 echo "          #########################################################"
-echo "          ##############  HTTP ACESS FILE   #######################"
+echo "          ##############  HTTP ACCESS LOG FILE  ####################"
 echo "          #########################################################"
 echo "                   Last 20 lines of CURRENT ACCESS log"
 echo ""
