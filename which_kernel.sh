@@ -9,8 +9,9 @@
 KERNEL="`uname -r`" # Get the name of the current kernel
 UPTIME="`uptime`" # Determine how long the system has been running
 RPM="`rpm -qa|grep kernel-2|sort`" # Show all installed kernels on this system
+REDH="`cat /etc/redhat-release`" # Show the release version on this system
 clear
-echo ""
+echo "$REDH"
 echo $UPTIME|
 while read a b c d e f
 do
