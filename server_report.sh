@@ -207,7 +207,7 @@ fi
                   # match UEK OL5
                   *"$EL5UEK"*) echo "THIS is UEK OL5 highest we take an OL5 Kernel"  >> /tmp/email-file.txt
 
-
+echo "Release    : 400.214.5.el5uek --- is the latest OL5 Kernel Im aware of" >> /tmp/email-file.txt
                         echo "" >> /tmp/email-file.txt
                         echo "**************  OL 5 **************" >> /tmp/email-file.txt
                         echo "Plugins:  " >> /tmp/email-file.txt
@@ -221,7 +221,7 @@ fi
                   # match OLD OL5
                   *"$EL5"*) echo "THIS is UEK OL5  BUT the old OL5 Kernel"  >> /tmp/email-file.txt
 
-
+echo "Release    : 400.214.5.el5uek --- is the latest OL5 Kernel Im aware of" >> /tmp/email-file.tx
                         echo "" >> /tmp/email-file.txt
                         echo "**************  OL 5 Kernel needs update **************" >> /tmp/email-file.txt
                         echo "Plugins:  " >> /tmp/email-file.txt
