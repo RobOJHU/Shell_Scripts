@@ -1,3 +1,57 @@
+#!/bin/bash
+KERNEL="`uname -r`" # Get the name of the current kernel
+UPTIME="`uptime`" # Determine how long the system has been running
+RPM="`rpm -qa|grep kernel-2|sort`" # Show all installed kernels on this system
+REDH="`cat /etc/redhat-release`" # Show the release version on this system
+valid_host=$(hostname)
+MYDATE=`TZ=MYT+16 date +%m-%d`
+
+
+
+
+rm -f /tmp/email-file.txt
+clear
+echo "######################################" > /tmp/email-file.txt
+echo "######    SERVER REPORT   ##############" >> /tmp/email-file.txt
+echo "######################################" >> /tmp/email-file.txt
+echo "" >> /tmp/email-file.txt
+displayhelp ()
+{
+    echo "Usage: server_report.sh"
+    echo "       server_report.sh -v  (Displays version and exits)"
+    echo "       server_report.sh -h  (Shows this message)"
+}
+
+displayversion ()
+{
+    echo "  Version 1.0.0, 4/29/2014, written by: RobO"
+    echo "  Thank you for using this script. I hope you like it."
+    echo "  If you have any improvements, please let me know!"
+}
+
+while getopts ":s:d:n:p:xvh" option; do
+         case $option in
+                 h)     displayhelp
+                        exit 1
+                        ;;
+                 v)     displayversion
+                        exit 1
+                        ;;
+                 \?)    echo "Invalid option: -$OPTARG" >&2
+                        displayhelp
+                        exit 1
+                        ;;
+         esac
+done
+
+
+
+
+
+
+
+
+
 
                         echo "THIS host is $valid_host" >> /tmp/email-file.txt
                         echo ""  >> /tmp/email-file.txt
