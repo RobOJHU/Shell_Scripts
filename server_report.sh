@@ -120,8 +120,8 @@ done < /etc/hosts.deny
 
 netstat -paln > /tmp/user-tmp2.tmp
 ############ look at the resol.conf file --telss use where the DNS servers are
-echo " ###############  DNS servers   --named in the resolv.conf file"
-cat /etc/resolv.conf
+echo " ###############  DNS servers   --named in the resolv.conf file  ###########################"
+cat /etc/resolv.conf >> /tmp/email-file.txt
 
 
 
