@@ -119,6 +119,15 @@ done < /etc/hosts.deny
 #  Clean up tmp file
 
 netstat -paln > /tmp/user-tmp2.tmp
+############ look at the resol.conf file --telss use where the DNS servers are
+echo " ###############  DNS servers   --named in the resolv.conf file"
+cat /etc/resolv.conf
+
+
+
+
+
+
 ##########  Anylyse the  SSHD port number  HERE ######
 echo "############## SSH port numbers ############# " >> /tmp/email-file.txt
 echo "" >> /tmp/email-file.txt
