@@ -14,11 +14,11 @@ fi
 sed 's/Updated:/update/g
 s/Erased:/erase/g
 /Installed/d
-/openssl/d' $1 | awk '{print"yum "$4" "$5}' > $2
+/openssl/d' $1 | awk '{print"yum --assumeyes "$4" "$5}' > $2
 
 ####  now add the She-bNG
 ed -s $2 <<< $'1i\n#!/bin/sh\n.\nwq'
 ### NOW REMIND YOURSELF TO DO STUFF
 echo " Now --- SCP the output to the PROD server  ...."
 echo "%>scp new_file.txt your_username@remotehost.edu:foobar.txt"
-echo "%>scp new_file.txt rosteen@devgalp1.dev.jhu.edu:/home/rosteen "
+echo "%>scp /root/YumUp/yum.log.MAY19 rosteen@dev---p1.dev.jhu.edu:/home/rosteen "
