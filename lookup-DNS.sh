@@ -79,3 +79,4 @@ esac
 
 done < /etc/resolv.conf
 #  Clean up tmp file
+echo " ... if necessary :  vim /etc/resolv.conf   ... "
