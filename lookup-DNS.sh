@@ -55,7 +55,7 @@ echo " ..............GOT the first one "
 
 *"128.220"*)
 echo $line
-echo "THIS Server $(hostname) ... has an OLDER DNS designationin /etc/resolv.conf file "
+echo "THIS Server $(hostname) ... has an OLDER DNS designation in /etc/resolv.conf file "
 echo ""
 ;;
 
@@ -76,7 +76,6 @@ echo ""
 echo $line
 ;;
 esac
-
 
 done < /etc/resolv.conf
 #  Clean up tmp file
