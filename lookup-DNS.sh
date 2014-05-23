@@ -40,7 +40,7 @@ while getopts ":s:d:n:p:xvh" option; do
 done
 
 echo " TODAYS Date $MYDATE  ..................... "
-echo "THIS host is $valid_host"
+echo " THIS host is $valid_host"
 #########  Anylyse the /etc/resolv.conf HERE ######
 echo ""
 echo "############## RESOLVE DNS file############# "
