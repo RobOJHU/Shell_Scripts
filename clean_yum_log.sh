@@ -14,7 +14,7 @@ fi
 sed 's/Updated:/update/g
 s/Erased:/erase/g
 /Installed/d
-/openssl/d' $1 | awk '{print"yum --assumeyes "$4" "$5}' > $2
+/openssl/d' $1 | awk '{print"yum -y "$4" "$5}' > $2
 
 ####  now add the She-bNG
 ed -s $2 <<< $'1i\n#!/bin/sh\n.\nwq'
