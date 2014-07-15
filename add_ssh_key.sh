@@ -23,3 +23,11 @@ echo "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAlm40Xye3S9qQpIPziB4yjX/XtvZeG4qYzlh6H2
 chown -R rosteen:root "$DIRECTORY"
 #  Chmod  the new file
 chmod  770 "$DIRECTORY"/authorized_keys
+
+# Now lets SED the SUDOERS file
+#sed '1,$s/\# \%wheel/%wheel/gp' /etc/sudoers2
+sed -i '/## Same thing without a password/a%wheel  ALL=(ALL)       NOPASSWD: ALL'  /etc/sudoers2
+
+# and ADD wheel to rosteen group
+usermod -a -G  wheel rosteen
+
