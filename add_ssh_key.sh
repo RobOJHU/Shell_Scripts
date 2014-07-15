@@ -26,7 +26,7 @@ chmod  770 "$DIRECTORY"/authorized_keys
 
 # Now lets SED the SUDOERS file
 #sed '1,$s/\# \%wheel/%wheel/gp' /etc/sudoers2
-sed -i '/## Same thing without a password/a%wheel  ALL=(ALL)       NOPASSWD: ALL'  /etc/sudoers2
+sed -i '/## Same thing without a password/a%wheel  ALL=(ALL)       NOPASSWD: ALL'  /etc/sudoers
 
 # and ADD wheel to rosteen group
 usermod -a -G  wheel rosteen
