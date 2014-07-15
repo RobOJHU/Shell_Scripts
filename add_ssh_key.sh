@@ -22,7 +22,7 @@ echo "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAlm40Xye3S9qQpIPziB4yjX/XtvZeG4qYzlh6H2
 #  Chown the new file
 chown -R rosteen:root "$DIR2"
 #  Chmod  the new file
-chmod  -R 700 "$DIRECTORY"
+chmod  -R 700 "$DIR2"
 
 # Now lets SED the SUDOERS file
 #sed '1,$s/\# \%wheel/%wheel/gp' /etc/sudoers2
