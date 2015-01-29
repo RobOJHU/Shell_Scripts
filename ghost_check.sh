@@ -1,5 +1,9 @@
 #!/bin/bash
-# I got this OFF GitHubfrom swys -- RobO
+# I got this OFF GitHub from swys -- RobO
+
+/* GHOST vulnerability tester */
+/* Credit: http://www.openwall.com/lists/oss-security/2015/01/27/9 */
+
 # variables
 FILE=~/ghosttest.c
 OUT_FILE=ghostcheck
