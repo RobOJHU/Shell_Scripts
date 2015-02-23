@@ -3,13 +3,6 @@
 #Description: APPEND the excisting /etc/bashrc
 echo "
 
-# Message of the day
-
-        if [ -r /etc/motd ]
-        then
-                cat /etc/motd
-        fi
-
 
 HISTSIZE=2500
 HISTTIMEFORMAT="%m/%d  "
