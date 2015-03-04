@@ -16,7 +16,7 @@ PORT="443"
 
 HOSTNAME="localhost"
 
-RESULT=$(echo -n | openssl s_client -cipher "EXPORT" -connect "$HOSTNAME:$PORT" 2>&1)
+RESULT=$(echo -n | openssl s_client -cipher "EXPORT" -connect localhost:443 2>&1)
 if [[ "$RESULT" =~ "Cipher is" || "$RESULT" =~ "Cipher    :" ]]; then
   echo "Oh my god.. you are so vulnerable.."
   exit 1
