@@ -8,4 +8,4 @@
  cd /root
  tar -xvf VMwareTools-9.4.10-2092844.tar.gz
  cd vmware-tools-distrib/
- echo "perl vmware-install.pl"
+ echo "perl vmware-install.pl .. is ready"
