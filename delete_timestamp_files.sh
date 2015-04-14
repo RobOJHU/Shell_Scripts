@@ -7,3 +7,6 @@ find ./ ! -newer /tmp/timestamp  -name "*.txt" -exec rm {} \;
 find ./ ! -newer /tmp/timestamp  -name "*.csv" -exec rm {} \;
 find ./ ! -newer /tmp/timestamp  -name "*.log" -exec rm {} \;
 find ./ ! -newer /tmp/timestamp  -name "*.xsd" -exec rm {} \;
+find ./ ! -newer /tmp/timestamp  -name "*.old" -exec rm {} \;
+find ./ ! -newer /tmp/timestamp  -name "*.bad" -exec rm {} \;
+find ./ ! -newer /tmp/timestamp  -name "*.sergey" -exec rm {} \;
