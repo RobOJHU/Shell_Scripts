@@ -12,3 +12,4 @@ find ./ ! -newer /tmp/timestamp  -name "*.old" -exec rm {} \;
 find ./ ! -newer /tmp/timestamp  -name "*.bad" -exec rm {} \;
 find ./ ! -newer /tmp/timestamp  -name "*.sergey" -exec rm {} \;
 find ./ ! -newer /tmp/timestamp  -name "*.pgp" -exec rm {} \;
+find ./ ! -newer /tmp/timestamp  -name "*.dat" -exec rm {} \;
