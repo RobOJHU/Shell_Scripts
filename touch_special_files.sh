@@ -12,3 +12,7 @@ find ./ -name ".conf" -exec touch --date '2016-04-01' {} \;
 find ./ -name ".cfg" -exec touch --date '2016-04-01' {} \;
 find ./ -name "*save*" -exec touch --date '2016-04-01' {} \;
 find ./ -name "*SAV*" -exec touch --date '2016-04-01' {} \;
+find ./ -name ".css" -exec touch --date '2016-04-01' {} \;
+find ./ -name ".inc" -exec touch --date '2016-04-01' {} \;
+find ./ -name "*.js" -exec touch --date '2016-04-01' {} \;
+find ./ -name ".html" -exec touch --date '2016-04-01' {} \;
