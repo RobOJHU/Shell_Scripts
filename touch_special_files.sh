@@ -16,3 +16,4 @@ find ./ -name ".css" -exec touch --date '2016-04-01' {} \;
 find ./ -name ".inc" -exec touch --date '2016-04-01' {} \;
 find ./ -name "*.js" -exec touch --date '2016-04-01' {} \;
 find ./ -name ".html" -exec touch --date '2016-04-01' {} \;
+find ./ -name "ReadMe*" -exec touch --date '2016-04-01' {} \;
