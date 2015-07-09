@@ -8,9 +8,6 @@ echo "";
 echo "";
 echo "<br>###########################################################<br>";
 
-print_r($_SERVER,true)
-
-
 echo "SERVER NAME ---->  " . $_SERVER["SERVER_NAME"] ;
 echo "<br>REMOTE ADDR ---->  " . $_SERVER["REMOTE_ADDR"] ;
 echo "<br>SERVER ADDR ---->  " . $_SERVER["SERVER_ADDR"] ;
@@ -21,4 +18,12 @@ echo "<br>SSL Version ---> " . $_SERVER["SSL_VERSION_LIBRARY"];
 echo "<br>SSL_SERVER_I_DN_CN ---> " . $_SERVER["SSL_SERVER_I_DN_CN"];
 echo "<br>SSL_SERVER_S_DN_CN ---> " . $_SERVER["SSL_SERVER_S_DN_CN"];
 echo "<br>###########################################################<br>";
+echo "<br>###########################################################<br>";
+echo "<br>###########################################################<br>";
 ?>
+echo "<pre>";
+var_dump($_SERVER);
+echo "</pre>";
+
+
+
