@@ -8,7 +8,7 @@ echo "";
 echo "";
 echo "<br>###########################################################<br>";
 
-
+print_r($_SERVER,true)
 
 
 echo "SERVER NAME ---->  " . $_SERVER["SERVER_NAME"] ;
