@@ -4,7 +4,7 @@ valid_host=$(hostname)
 DIRECTORY="/home/rosteen/.ssh"
 DIR2="/home/rosteen"
 if [ -d "$DIRECTORY" ]; then
-  # Control will enter here if $DIRECTORY exists.
+  # Control will enter here if $DIRECTORY exists!
 echo "Got the /.ssh DIR ....  move on and ADD the authorized_key file"
 echo $MYDATE
 fi
